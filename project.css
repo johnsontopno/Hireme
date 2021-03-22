@@ -1,0 +1,324 @@
+/* Testionials */
+#Testionials{
+    margin: 100px 0;
+
+}
+.testionials{
+    /* border-left: 4px solid #174982; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testionials img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.user-details{
+    display: inline-block;
+    font-size: 12px;
+}
+.testionials2{
+    border-left: 4px solid #3680d4;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#sideNav
+{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #128acfe0;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#manubtn
+{
+    width: 50px;
+    height: 50px;
+    background: #319edde0;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#manubtn img
+{
+    width: 20px;
+    margin-top: 15px;
+}
+@media screen and (max-width: 770px){
+    .banner-text h1
+    {
+        font-size: 44px;
+            }   
+            .banner-btn a{
+                display: block;
+                margin: 20px auto;
+            }
+}
+
+
+.piechart { 
+	margin-top: 950px; 
+	margin-left: 10%; 
+	display: block; 
+	position: absolute; 
+	width: 100px; 
+	height: 100px; 
+	border-radius: 50%; 
+	background-image: conic-gradient( 
+		pink 78deg,  
+		lightblue 0 235deg,  
+		orange 0); 
+} 
+
+body, 
+.piechart { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
+
+.piechart2 { 
+	margin-top: 950px;
+	margin-left: 40%; 
+	display: block; 
+	position: absolute; 
+	width: 100px; 
+	height: 100px; 
+	border-radius: 50%; 
+	background-image: conic-gradient( 
+		pink 95deg,  
+		lightblue 0 235deg,  
+		orange 0); 
+} 
+
+body, 
+.piechart2 { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
+
+.piechart3 { 
+	margin-top: 950px; 
+	margin-left: 70%;
+	display: block; 
+	position: absolute; 
+	width: 100px; 
+	height: 100px; 
+	border-radius: 50%; 
+	background-image: conic-gradient( 
+		pink 59deg,  
+		lightblue 0 235deg,  
+		orange 0); 
+} 
+
+body, 
+.piechart3 { 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
+
+/* <script>
+window.onload = function () {
+
+var options = {
+	animationEnabled: true,
+	title: {
+		text: "ACME Corporation Apparel Sales"
+	},
+	data: [{
+		type: "doughnut",
+		innerRadius: "40%",
+		showInLegend: true,
+		legendText: "{label}",
+		indexLabel: "{label}: #percent%",
+		dataPoints: [
+			{ label: "Department Stores", y: 6492917 },
+			{ label: "Discount Stores", y: 7380554 },
+			{ label: "Stores for Men / Women", y: 1610846 },
+			{ label: "Teenage Specialty Stores", y: 950875 },
+			{ label: "All other outlets", y: 900000 }
+		]
+	}]
+};
+$("#chartContainer").CanvasJSChart(options);
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script> */
+
+
+
+
+
+
+/* 
+<script>
+window.onload = function () {
+
+var totalVisitors = 883000;
+var visitorsData = {
+	"New vs Returning Visitors": [{
+		click: visitorsChartDrilldownHandler,
+		cursor: "pointer",
+		explodeOnClick: false,
+		innerRadius: "75%",
+		legendMarkerType: "square",
+		name: "New vs Returning Visitors",
+		radius: "100%",
+		showInLegend: true,
+		startAngle: 90,
+		type: "doughnut",
+		dataPoints: [
+			{ y: 519960, name: "New Visitors", color: "#E7823A" },
+			{ y: 363040, name: "Returning Visitors", color: "#546BC1" }
+		]
+	}],
+	"New Visitors": [{
+		color: "#E7823A",
+		name: "New Visitors",
+		type: "column",
+		xValueFormatString: "MMM YYYY",
+		dataPoints: [
+			{ x: new Date("1 Jan 2015"), y: 33000 },
+			{ x: new Date("1 Feb 2015"), y: 35960 },
+			{ x: new Date("1 Mar 2015"), y: 42160 },
+			{ x: new Date("1 Apr 2015"), y: 42240 },
+			{ x: new Date("1 May 2015"), y: 43200 },
+			{ x: new Date("1 Jun 2015"), y: 40600 },
+			{ x: new Date("1 Jul 2015"), y: 42560 },
+			{ x: new Date("1 Aug 2015"), y: 44280 },
+			{ x: new Date("1 Sep 2015"), y: 44800 },
+			{ x: new Date("1 Oct 2015"), y: 48720 },
+			{ x: new Date("1 Nov 2015"), y: 50840 },
+			{ x: new Date("1 Dec 2015"), y: 51600 }
+		]
+	}],
+	"Returning Visitors": [{
+		color: "#546BC1",
+		name: "Returning Visitors",
+		type: "column",
+		xValueFormatString: "MMM YYYY",
+		dataPoints: [
+			{ x: new Date("1 Jan 2015"), y: 22000 },
+			{ x: new Date("1 Feb 2015"), y: 26040 },
+			{ x: new Date("1 Mar 2015"), y: 25840 },
+			{ x: new Date("1 Apr 2015"), y: 23760 },
+			{ x: new Date("1 May 2015"), y: 28800 },
+			{ x: new Date("1 Jun 2015"), y: 29400 },
+			{ x: new Date("1 Jul 2015"), y: 33440 },
+			{ x: new Date("1 Aug 2015"), y: 37720 },
+			{ x: new Date("1 Sep 2015"), y: 35200 },
+			{ x: new Date("1 Oct 2015"), y: 35280 },
+			{ x: new Date("1 Nov 2015"), y: 31160 },
+			{ x: new Date("1 Dec 2015"), y: 34400 }
+		]
+	}]
+};
+
+var newVSReturningVisitorsOptions = {
+	animationEnabled: true,
+	theme: "light2",
+	title: {
+		text: "New VS Returning Visitors"
+	},
+	subtitles: [{
+		text: "Click on Any Segment to Drilldown",
+		backgroundColor: "#2eacd1",
+		fontSize: 16,
+		fontColor: "white",
+		padding: 5
+	}],
+	legend: {
+		fontFamily: "calibri",
+		fontSize: 14,
+		itemTextFormatter: function (e) {
+			return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / totalVisitors * 100) + "%";  
+		}
+	},
+	data: []
+};
+
+var visitorsDrilldownedChartOptions = {
+	animationEnabled: true,
+	theme: "light2",
+	axisX: {
+		labelFontColor: "#717171",
+		lineColor: "#a2a2a2",
+		tickColor: "#a2a2a2"
+	},
+	axisY: {
+		gridThickness: 0,
+		includeZero: false,
+		labelFontColor: "#717171",
+		lineColor: "#a2a2a2",
+		tickColor: "#a2a2a2",
+		lineThickness: 1
+	},
+	data: []
+};
+
+newVSReturningVisitorsOptions.data = visitorsData["New vs Returning Visitors"];
+$("#chartContainer").CanvasJSChart(newVSReturningVisitorsOptions);
+
+function visitorsChartDrilldownHandler(e) {
+	e.chart.options = visitorsDrilldownedChartOptions;
+	e.chart.options.data = visitorsData[e.dataPoint.name];
+	e.chart.options.title = { text: e.dataPoint.name }
+	e.chart.render();
+	$("#backButton").toggleClass("invisible");
+}
+
+$("#backButton").click(function() { 
+	$(this).toggleClass("invisible");
+	newVSReturningVisitorsOptions.data = visitorsData["New vs Returning Visitors"];
+	$("#chartContainer").CanvasJSChart(newVSReturningVisitorsOptions);
+});
+
+}
+</script>
+<style>
+	#backButton {
+		border-radius: 4px;
+		padding: 8px;
+		border: none;
+		font-size: 16px;
+		background-color: #2eacd1;
+		color: white;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+	}
+	.invisible {
+		display: none;
+	}
+</style>
+</head>
+<body>
+
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<button class="btn invisible" id="backButton">< Back</button>
+<script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script> */

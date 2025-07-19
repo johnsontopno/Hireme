@@ -2,462 +2,234 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finance Dashboard</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- CanvasJS & jQuery -->
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 
-    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
-
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="project.css">
-
-    <title>Hello, world!</title>
 </head>
 
 <body>
+    <!-- Side Nav -->
     <div id="sideNav">
         <nav>
             <ul>
-                <li><a href="#"><i class="fa fa-home"></i>Search</a></li>
+                <li><a href="#"><i class="fa fa-home"></i> Search</a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">List</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>Library</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#"><i class="fa fa-user"></i> Library</a></li>
+                <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Mute</a></li>
                 <li><a href="#">Exit</a></li>
             </ul>
         </nav>
-
     </div>
+
+    <!-- Menu Button -->
     <div id="manubtn">
-        <img src="Image/menu.jpg" id="menu">
+        <img src="Image/list.png" id="menu">
     </div>
-    <script>
-        var manubtn = document.getElementById("manubtn")
-        var sideNav = document.getElementById("sideNav")
-        var menu = document.getElementById("menu")
 
+    <!-- Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="row">
 
-        sideNav.style.left = "-250px";
+                <!-- Left Card -->
+                <div class="col-md-4">
+                    <div class="card alert-dark">
+                        <img src="Image/close-up-portrait-good-looking-university-student-sitting-meeting-with-friends-after-study_176420-16814.jpg"
+                            class="card-img-top" alt="User Avatar">
+                        <div class="card-body">
+                            <h5 class="text-center">Hi Mike,</h5>
+                            <p class="text-center text-secondary">Welcome back</p>
 
-        manubtn.onclick = function () {
-            if (sideNav.style.left == "-250px") {
-                sideNav.style.left = "0";
-                menu.src = "Image/close.jpg";
-            }
-            else {
-                sideNav.style.left = "-250px";
-                menu.src = "Image/menu.jpg";
-            }
-        }
+                            <div>
+                                <h6>Today</h6>
+                                <h4>$19,892</h4>
+                                <p class="text-secondary">Account Balance</p>
+                            </div>
 
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 100,
-            speedAsDuration: true
-        });
-    </script>
+                            <div>
+                                <h4>$4,000</h4>
+                                <p class="text-secondary">YTD Contribution</p>
+                            </div>
 
+                            <div>
+                                <h4>$1,892</h4>
+                                <p class="text-secondary">Total Interest</p>
+                            </div>
 
-    <section id="testionials">
-        <!-- <div class="container"> -->
-        <!-- <h1 class="title text-center"> What Clients Say</h1> -->
-        <div class="row offset-0.5">
+                            <a href="#" class="btn btn-primary w-100">I want to</a>
 
-            <div class="col-md-3 testionials">
-                <div class="card col-md-4 alert-dark" style="width: 20rem; height: auto;">
-                    <img src="Image/close-up-portrait-good-looking-university-student-sitting-meeting-with-friends-after-study_176420-16814.jpg"
-                        class="card-img-top" alt="...">
+                            <hr>
+                            <p><strong>Recent Transactions</strong></p>
+                            <p class="text-secondary">2020-08-07</p>
+                            <p>Withdrawal to Bank-XX11</p>
 
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Hi Mike,</h5>
-                        <p class="card-text text-secondary text-center">Welcome back</p>
+                            <hr>
+                            <p class="text-secondary">2020-07-21</p>
+                            <p>Withdrawal to Bank-XX11</p>
 
-                        <br>
-                        <h6 class="card-text">Today</h6>
-                        <h4 class="card-text">$19,892</h4>
-                        <h6 class="card-text text-secondary">Account balance</h6>
-                        <br>
-
-                        <h4 class="card-text">$4,000</h4>
-                        <h6 class="card-text text-secondary">Year-To-Date Contribution</h6>
-                        <br>
-
-                        <h4 class="card-text">$1,892</h4>
-                        <h6 class="card-text text-secondary">Total Interest</h6>
-                        <br>
-
-                        <a href="#" class="btn btn-primary nav-item dropdown ">I want to</a>
-
-                        <br>
-
-                        <br>
-
-                        <br>
-
-
-                        <h6 class="card-text">Recent Transactions</h6>
-
-                        <h6 class="card-text text-secondary">2020-08-07</h6>
-                        <h6 class="card-text">Withdrawal Transfer to Bank-XX11</h6>
-
-
-                        <br>
-
-                        <hr>
-                        <h6 class="card-text text-secondary">2020-07-21</h6>
-                        <h6 class="card-text">Withdrawal Transfer to Bank-XX11</h6>
-
-
-                        <br>
-
-                        <hr>
-                        <h6 class="card-text text-secondary">2020-07-16</h6>
-                        <h6 class="card-text">Withdrawal Transfer to Bank-XX11</h6>
-
-                        <br>
-
-                        <br>
-
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-
+                            <hr>
+                            <p class="text-secondary">2020-07-16</p>
+                            <p>Withdrawal to Bank-XX11</p>
+                        </div>
                     </div>
                 </div>
 
-            </div>
-            <div class="col-md-5 testionials">
-                <div class="card col-md-3 alert-warning " style="width: 30rem; height: auto;">
+                <!-- Middle Card -->
+                <div class="col-md-4">
+                    <div class="card alert-warning">
+                        <div class="card-body">
+                            <h6 class="text-primary">Retirement Income</h6>
+                            <h5>Starting Year 2056</h5>
 
-                    <div class="card-body">
-                        <h7 class="card-title text-primary ">Retirement Income</h7>
+                            <div class="mb-3">
+                                <label><strong>$300,000</strong></label>
+                                <input type="text" class="form-control" placeholder="My Goal">
+                            </div>
 
-                        <h5 class="card-title ">Starting Year 2056</h5>
+                            <div class="mb-3">
+                                <label><strong>59%</strong></label>
+                                <input type="text" class="form-control" placeholder="Goal Achieved">
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">
-                                <h4 class="card-text">$300,000</h4>
-                            </label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="My Goal">
-                        </div>
+                            <div class="mb-3">
+                                <label><strong>$300</strong></label>
+                                <input type="text" class="form-control" placeholder="Est. Monthly Income">
+                            </div>
 
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">
-                                <h4 class="card-text">59%</h4>
-                            </label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Goal achieved">
-                        </div>
+                            <!-- Bar Chart -->
+                            <div id="barChart" style="height: 200px; width: 100%;"></div>
 
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">
-                                <h4 class="card-text">$300</h4>
-                            </label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Est. Monthly Income">
-                        </div>
+                            <hr>
+                            <h5>How do I compare to my peers?</h5>
+                            <p class="text-secondary">Current goal achievement</p>
 
+                            <!-- Dropdowns -->
+                            <div class="mb-2">
+                                <label>Age Group</label>
+                                <select class="form-select">
+                                    <option>Under 30</option>
+                                    <option>30-40</option>
+                                    <option>40+</option>
+                                </select>
+                            </div>
 
-                        <!-- <h4 class="card-text text-dark">Contribution Overtime</h4> -->
-                        <script type="text/javascript">
-                            window.onload = function () {
+                            <div class="mb-2">
+                                <label>Salary</label>
+                                <select class="form-select">
+                                    <option>20K–30K</option>
+                                    <option>30K–50K</option>
+                                    <option>50K+</option>
+                                </select>
+                            </div>
 
-                                var chart = new CanvasJS.Chart("chartContainer", {
-                                    theme: "light1", // "light2", "dark1", "dark2"
-                                    animationEnabled: false, // change to true		
-                                    title: {
-                                        text: "Contributionn Overtime"
-                                    },
-                                    data: [
-                                        {
-                                            // Change type to "bar", "area", "spline", "pie",etc.
-                                            type: "column",
-                                            dataPoints: [
-                                                { label: "20", y: 10 },
-                                                { label: "25", y: 15 },
-                                                { label: "30", y: 25 },
-                                                { label: "35", y: 30 },
-                                                { label: "40", y: 28 },
-                                                { label: "60", y: 28 },
-                                                { label: "65", y: 28 }
-                                            ]
-                                        }
-                                    ]
-                                });
-                                chart.render();
-
-                            }
-                        </script>
-
-                        <div id="chartContainer" style="height: 30px; width: 100%;"></div>
-                        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
-                        <h4 class="card-text">How do I Compare to my peers?</h4>
-                        <h6 class="card-text text-secondary">These numbers represent current goal achievement</h6>
-                        <h5 class="nav-item dropdown">Age
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Under 30
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Technology</a></li>
-                                <li><a class="dropdown-item" href="#">Web develeopment</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Support</a></li>
-                                <li><a class="dropdown-item" href="#">Write for us</a></li>
-                            </ul>
-
-                        </h5>
-
-                        <h5 class="nav-item dropdown">Salary:
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                K 20-K30
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Technology</a></li>
-                                <li><a class="dropdown-item" href="#">Web develeopment</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Support</a></li>
-                                <li><a class="dropdown-item" href="#">Write for us</a></li>
-                            </ul>
-                        </h5>
-
-                        <h5 class="nav-item dropdown">Gender
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Male
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Technology</a></li>
-                                <li><a class="dropdown-item" href="#">Web develeopment</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Support</a></li>
-                                <li><a class="dropdown-item" href="#">Write for us</a></li>
-                            </ul>
-                        </h5>
-
-                    </div>
-                    <!-- <script>
-                        window.onload = function () {
-
-                            var totalVisitors = 883000;
-                            var visitorsData = {
-                                "New vs Returning Visitors": [{
-                                    click: visitorsChartDrilldownHandler,
-                                    cursor: "pointer",
-                                    explodeOnClick: false,
-                                    innerRadius: "75%",
-                                    legendMarkerType: "square",
-                                    name: "New vs Returning Visitors",
-                                    radius: "100%",
-                                    showInLegend: true,
-                                    startAngle: 90,
-                                    type: "doughnut",
-                                    dataPoints: [
-                                        { y: 519960, name: "New Visitors", color: "#E7823A" },
-                                        { y: 363040, name: "Returning Visitors", color: "#546BC1" }
-                                    ]
-                                }],
-                                "New Visitors": [{
-                                    color: "#E7823A",
-                                    name: "New Visitors",
-                                    type: "column",
-                                    xValueFormatString: "MMM YYYY",
-                                    dataPoints: [
-                                        { x: new Date("1 Jan 2015"), y: 33000 },
-                                        { x: new Date("1 Feb 2015"), y: 35960 },
-                                        { x: new Date("1 Mar 2015"), y: 42160 },
-                                        { x: new Date("1 Apr 2015"), y: 42240 },
-                                        { x: new Date("1 May 2015"), y: 43200 },
-                                        { x: new Date("1 Jun 2015"), y: 40600 },
-                                        { x: new Date("1 Jul 2015"), y: 42560 },
-                                        { x: new Date("1 Aug 2015"), y: 44280 },
-                                        { x: new Date("1 Sep 2015"), y: 44800 },
-                                        { x: new Date("1 Oct 2015"), y: 48720 },
-                                        { x: new Date("1 Nov 2015"), y: 50840 },
-                                        { x: new Date("1 Dec 2015"), y: 51600 }
-                                    ]
-                                }],
-                                "Returning Visitors": [{
-                                    color: "#546BC1",
-                                    name: "Returning Visitors",
-                                    type: "column",
-                                    xValueFormatString: "MMM YYYY",
-                                    dataPoints: [
-                                        { x: new Date("1 Jan 2015"), y: 22000 },
-                                        { x: new Date("1 Feb 2015"), y: 26040 },
-                                        { x: new Date("1 Mar 2015"), y: 25840 },
-                                        { x: new Date("1 Apr 2015"), y: 23760 },
-                                        { x: new Date("1 May 2015"), y: 28800 },
-                                        { x: new Date("1 Jun 2015"), y: 29400 },
-                                        { x: new Date("1 Jul 2015"), y: 33440 },
-                                        { x: new Date("1 Aug 2015"), y: 37720 },
-                                        { x: new Date("1 Sep 2015"), y: 35200 },
-                                        { x: new Date("1 Oct 2015"), y: 35280 },
-                                        { x: new Date("1 Nov 2015"), y: 31160 },
-                                        { x: new Date("1 Dec 2015"), y: 34400 }
-                                    ]
-                                }]
-                            };
-
-                            var newVSReturningVisitorsOptions = {
-                                animationEnabled: true,
-                                theme: "light2",
-                                title: {
-                                    text: "New VS Returning Visitors"
-                                },
-                                subtitles: [{
-                                    text: "Click on Any Segment to Drilldown",
-                                    backgroundColor: "#2eacd1",
-                                    fontSize: 16,
-                                    fontColor: "white",
-                                    padding: 5
-                                }],
-                                legend: {
-                                    fontFamily: "calibri",
-                                    fontSize: 14,
-                                    itemTextFormatter: function (e) {
-                                        return e.dataPoint.name + ": " + Math.round(e.dataPoint.y / totalVisitors * 100) + "%";
-                                    }
-                                },
-                                data: []
-                            };
-
-                            var visitorsDrilldownedChartOptions = {
-                                animationEnabled: true,
-                                theme: "light2",
-                                axisX: {
-                                    labelFontColor: "#717171",
-                                    lineColor: "#a2a2a2",
-                                    tickColor: "#a2a2a2"
-                                },
-                                axisY: {
-                                    gridThickness: 0,
-                                    includeZero: false,
-                                    labelFontColor: "#717171",
-                                    lineColor: "#a2a2a2",
-                                    tickColor: "#a2a2a2",
-                                    lineThickness: 1
-                                },
-                                data: []
-                            };
-
-                            newVSReturningVisitorsOptions.data = visitorsData["New vs Returning Visitors"];
-                            $("#chartContainer").CanvasJSChart(newVSReturningVisitorsOptions);
-
-                            function visitorsChartDrilldownHandler(e) {
-                                e.chart.options = visitorsDrilldownedChartOptions;
-                                e.chart.options.data = visitorsData[e.dataPoint.name];
-                                e.chart.options.title = { text: e.dataPoint.name }
-                                e.chart.render();
-                                $("#backButton").toggleClass("invisible");
-                            }
-
-                            $("#backButton").click(function () {
-                                $(this).toggleClass("invisible");
-                                newVSReturningVisitorsOptions.data = visitorsData["New vs Returning Visitors"];
-                                $("#chartContainer").CanvasJSChart(newVSReturningVisitorsOptions);
-                            });
-
-                        }
-                    </script> -->
-
-
-                    <div class="piechart"></div>
-                    <!-- <h1>Average</h1>  -->
-
-                    <div id="chartContainer" style="height: 100px; width: 25%;"></div>
-                    <!-- <button class="btn invisible" id="backButton"> Back</button> -->
-
-
-                    <div class="piechart2"></div>
-                    <!-- <h1>Average</h1>  -->
-
-
-                    <div class="piechart3"></div>
-                    <!-- <h1>Average</h1>  -->
-                </div>
-
-
-            </div>
-            <div class="col-md-4 testionials">
-                <div class="card col-md-6 alert-danger" style="width: 20rem; height: auto;">
-
-                    <div class="card-body">
-                        <h5 class="card-title">Retirement Strategy</h5>
-
-
-                        <h7 class="card-text"></h7>
-
-                        <label for="customRange1" class="form-label">Employee Contribution</label>
-                        <input type="range" class="form-range" id="customRange1">
-                        <h4 class="card-text">12%</h4>
-
-                        <h7 class="card-text">Retirement Age</h7>
-
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                aria-valuemax="100" style="width:70%">
-                                65
+                            <div class="mb-2">
+                                <label>Gender</label>
+                                <select class="form-select">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
                             </div>
                         </div>
-                        <h6 class="card-text text-secondary">Year-To-Date Contribution</h6>
-
-
-                        <h5 class="card-text">Employee Contribution 8.4%</h5>
-                        <h4 class="card-text text-secondary">Interest rate 5%</h4>
-
-                        <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="button">Update</button>
-                            <a href="#" class="stretched-link text-center">View Help Docs</a>
-                        </div>
-
-
-
                     </div>
 
+                    <!-- Pie Charts -->
+                    <div class="d-flex justify-content-around mt-4">
+                        <div class="piechart" style="--deg: 78deg;"></div>
+                        <div class="piechart" style="--deg: 95deg;"></div>
+                        <div class="piechart" style="--deg: 59deg;"></div>
+                    </div>
                 </div>
 
-                <div class="col-md-6 testionials2 text-center ">
-                    <h4 class="card-text text-secondary alert-success"> Are you Consideing a </h4>
-                    <h4 class="alert-primary"> Housing Advance ?</h4>
-                    <h6 class="card-text text-secondary alert-dark">Limited time reduce Interest </h6>
-                    <a href="#" class="stretched-link">Learn More</a>
+                <!-- Right Card -->
+                <div class="col-md-4">
+                    <div class="card alert-danger">
+                        <div class="card-body">
+                            <h5>Retirement Strategy</h5>
+
+                            <label>Employee Contribution</label>
+                            <input type="range" class="form-range" value="12">
+                            <p><strong>12%</strong></p>
+
+                            <p>Retirement Age</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" style="width:70%">65</div>
+                            </div>
+
+                            <p class="text-secondary">YTD Contribution</p>
+                            <p>Employee Contribution: 8.4%</p>
+                            <p class="text-secondary">Interest Rate: 5%</p>
+
+                            <div class="d-grid">
+                                <button class="btn btn-primary">Update</button>
+                                <a href="#" class="text-center mt-2">View Help Docs</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info mt-3 text-center">
+                        <p>Are you considering a housing advance?</p>
+                        <p class="text-secondary">Limited-time reduced interest</p>
+                        <a href="#">Learn More</a>
+                    </div>
                 </div>
 
             </div>
-
         </div>
-        <!-- </div> -->
     </section>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
+    <script>
+        // Sidebar toggle
+        document.getElementById("manubtn").onclick = function () {
+            const sideNav = document.getElementById("sideNav");
+            const menu = document.getElementById("menu");
+            if (sideNav.style.right === "0px") {
+                sideNav.style.right = "-250px";
+                menu.src = "Image/list.png";
+            } else {
+                sideNav.style.right = "0px";
+                menu.src = "Image/close.png";
+            }
+        };
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
+        // Bar Chart
+        window.onload = function () {
+            const chart = new CanvasJS.Chart("barChart", {
+                theme: "light1",
+                animationEnabled: true,
+                title: {
+                    text: "Contribution Over Time"
+                },
+                data: [{
+                    type: "column",
+                    dataPoints: [
+                        { label: "20", y: 10 },
+                        { label: "25", y: 15 },
+                        { label: "30", y: 25 },
+                        { label: "35", y: 30 },
+                        { label: "40", y: 28 },
+                        { label: "60", y: 28 },
+                        { label: "65", y: 28 }
+                    ]
+                }]
+            });
+            chart.render();
+        };
+    </script>
 </body>
 
 </html>
